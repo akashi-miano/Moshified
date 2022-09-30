@@ -1,0 +1,183 @@
+// desktops
+
+@media (max-width: 80em) {
+	// panel
+	.panel  {
+		&__grid  {
+			grid-template-columns: 1fr;
+			justify-items: center;
+		}
+
+		&__content-wrapper {
+			max-width: 650px;
+			margin: 0 auto;
+			text-align: center;
+
+		}
+}
+	// pricing
+	.pricing {
+		&__plans {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		&__card:nth-child(3){
+			grid-column: 1/-1;
+			justify-self: center;
+	}
+}
+}
+
+// tablets
+@media (max-width: 55em) {
+	
+	html {
+		font-size: 75%;
+	}
+
+	.hero  {
+		&__content {
+			grid-template-columns: 1fr;
+			justify-items: center;
+			text-align: center;
+		}
+
+		&__nav {
+			margin-bottom: 5rem;
+		}
+
+		&_title {
+			font-size: 3rem;
+		}
+	}
+
+	.host {
+		&__content-wrapper {
+			grid-template-columns: 1fr;
+		}
+		&__content-btn  {
+			display: inline-block;
+			margin-bottom: 1.5rem;
+	}
+
+		&__img-wrapper--2,
+		&__img-wrapper--3 {
+			order: 1 !important;
+		}
+}
+	// testimonials
+	.testimonials {
+
+
+	&__img-wrapper {
+		width: 85%;
+		margin-bottom: 1.5rem;
+	}
+	img {
+		width: 100% !important;
+	}
+	&__content-wrapper {
+			grid-template-columns: 1fr;
+			justify-items: center;
+
+	}
+	&__started {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		text-align: center;
+		gap: 1.125rem;
+
+		.btn  {
+		margin: 1.125rem auto;
+}
+	}
+
+	p  {
+		max-width: 450px;
+	}
+
+	&__author::before {
+		height: 2px !important;
+	}
+	}
+
+
+	//footer
+	.footer {
+	
+	&__wrapper {
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+
+	&__section  {
+		margin-bottom: 1.5rem ;
+		padding-bottom: 1.5rem;
+		border-bottom: 1px solid $text-clr;
+		width: 100%;
+		text-align: center;
+
+		&:last-child {
+			border: 0;
+		}
+	}
+		
+	&__logo-wrapper {
+		margin-bottom: 2.5rem;
+	}
+}
+	// pricing
+	.pricing {
+		&__plans {
+			grid-template-columns: 1fr;
+		}
+
+		&__card:nth-child(3){
+			grid-column: 1;
+	}
+	
+	&__card {
+		&-special-header::before  {
+			width: 30px!important;
+	}
+		
+	}
+}
+
+}
+
+
+// mobile
+@media(max-width: 35em) {
+	
+	html  {
+		font-size: 62.5%;
+	}
+
+	.hero  {
+		
+		&__nav  {
+			flex-direction: column;
+		}
+
+		&__logo {
+			margin-bottom: .5rem;
+		}
+	}
+
+	//pricing
+	.pricing {
+		&__domains {
+			display: grid !important;
+			grid-template-columns: 1fr 1fr;
+			justify-items: center;
+
+			p {
+			width: fit-content;
+}
+		}
+}
+
+}
+
+

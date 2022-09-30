@@ -1,0 +1,211 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+// resets
+
+*, 
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Inter,Arial,Helvetica,sans-serif;
+	color: #7b858b;
+	line-height: 1.6;
+}
+
+h1,h2,h3,h4 {
+	line-height: 1.1;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+// color variables
+$primary-clr: #2584ff;
+$secondary-clr: #00d9ff;
+$accent-clr: #ec3000;
+$dark-bg: #232323;
+$dark-clr: #777;
+$hero-link-clr: #d2d0db;
+$hero-sub-title-clr: #b9c3cf;
+$text-clr: #7b858b;
+$sub-title-clr: #918ca4;
+$title-clr: #1b0760;
+
+// typo variable
+$hero-title-fs: 5rem;
+$title-fs: 2.5rem;
+$sub-title-fs: 1.25rem;
+$normal-fs: 1.125rem;
+
+// utilities
+.container {
+	max-width: 1250px;
+	padding: 0 2rem;
+	margin: 0 auto;
+}
+
+.round {
+	border-radius: 100px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.grid {
+	display: grid;
+}
+
+.grid--1x2 {
+	grid-template-columns: repeat(2, minmax(auto, 1fr))
+}
+.grid--1x3 {
+	grid-template-columns: repeat(3, minmax(auto, 1fr))
+}
+.grid--1x5 {
+	grid-template-columns: repeat(5, minmax(auto, 1fr))
+}
+
+.center {
+	display: grid;
+	place-items: center;
+}
+
+.py-1 {
+	padding: 1rem 0 !important;
+}
+.py-2 {
+	padding: 2rem 0 !important;
+}
+.py-3 {
+	padding: 3rem 0 !important;
+}
+.py-4 {
+	padding: 4rem 0 !important;
+}
+.py-5 {
+	padding: 5rem 0 !important;
+}
+
+
+.px-1 {
+	padding: 0 1rem !important;
+}
+.px-2 {
+	padding: 0 2rem !important;
+}
+.px-3 {
+	padding: 0 3rem !important;
+}
+
+.p-1 {
+	padding:  1rem !important;
+}
+.p-2 {
+	padding:  2rem !important;
+}
+.p-3 {
+	padding:  3rem !important;
+}
+
+.flow-content--s > * + *  {
+	margin-top: .5rem !important;
+}
+.flow-content--m > * + *  {
+	margin-top: 1rem !important;
+}
+.flow-content--xm > * + *  {
+	margin-top: 1.5rem !important;
+}
+.flow-content--l > * + *  {
+	margin-top: 3rem !important;
+}
+.flow-content--xl > * + *  {
+	margin-top: 3.5rem !important;
+}
+
+// btn
+
+%btn {
+	display: inline-block;
+	border: 0;
+	background: 0;
+	padding: 1.25em 3.75em;
+	text-transform: uppercase;
+	font-size: .9rem;
+	font-weight: 700;
+	transition: 250ms;
+}
+
+.btn {
+	@extend %btn;
+
+	&--round {
+		border-radius: 100px;
+	}
+
+	&--accent {
+		background: $accent-clr;
+		color: #fff;
+
+		&:hover,
+		&:focus {
+			background: darken($accent-clr, 10%);
+		}
+	}
+
+	&--cyan {
+		background: $secondary-clr;
+		color: #fff;
+
+		&:hover,
+		&:focus {
+			background: darken($secondary-clr, 5%);
+		}
+	}
+
+	&--light {
+		background: #fff;
+		color: $title-clr ;
+		border: 1px solid $title-clr;
+
+		&:hover,
+		&:focus {
+			background: $title-clr;
+			color: #fff;
+		}
+	}
+
+	&--arrow {
+		display: flex;
+		align-items: center;
+		gap: .5rem;
+		color: $accent-clr;
+		font-weight: 600;
+		font-size: 1.25rem;
+
+		i  {
+			font-size: 1rem;
+			transition: 250ms;
+		}
+
+		&:hover i,
+		&:focus i{
+			transform: translateX(.5rem);
+		}
+	}
+
+}
