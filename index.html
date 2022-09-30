@@ -8,7 +8,8 @@
 	<!-- link font awesome --> 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<!-- link external stylesheet -->
+	<!-- link external stylesheets -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css" media="all">
 
 </head>
@@ -26,23 +27,23 @@
 
 		<div class="hero__content grid grid--1x2 container">
 			<div class="hero__content-text flow-content--m">
-				<h1 class="hero__title"> Cloud Hosting for Pros </h1>
+				<h1 class="hero__title" data-aos="zoom-in"> Cloud Hosting for Pros </h1>
 				<p class="hero__desc"> Deploy your websites in less than 60 seconds. </p>
 				<a class="btn btn--accent btn--round uppercase" href="#">get started</a>
 			</div>
-			<div class="hero__content-img">
+			<div class="hero__content-img" data-aos="zoom-in">
 				<img class="hero__img" src="img/banner.b865dda6.png" alt="">
 			</div>
 		</div>
 	</header>
 
 	<section class="pricing py-5" id="pricing">
-		<div class="flow-content--xm">
-			<header class="pricing__header flow-content--m">
+		<div class="flow-content--xm" >
+			<header class="pricing__header flow-content--m" data-aos="fade-up">
 				<h2 class="pricing__title">Starting at $10 per month</h2>
 				<p class="pricing__desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, exercitationem? </p>
 			</header>
-			<div class="pricing__content">
+			<div class="pricing__content" data-aos="fade-up">
 				<form class="pricing__input-wrapper round">
 					<input class="pricing__input round" placeholder="Enter domain name here...">
 					<button class="pricing__btn btn btn--accent btn--round"><i class="fa-solid fa-magnifying-glass"></i> search</button>
@@ -57,7 +58,7 @@
 				</div>
 			</div>
 
-			<div class="pricing__plans container center grid grid--1x3">
+			<div class="pricing__plans container center grid grid--1x3" data-aos="fade-up">
 				<div class="pricing__card flow-content--xm">
 					<header class="pricing__card-header ">
 						<h3 class="pricing__card-title">Entry</h3>
@@ -108,7 +109,7 @@
 			<p class="host__desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, voluptatem. </p>
 		</header>
 
-		<div class="host__content-wrapper grid grid--1x2 container center">
+		<div class="host__content-wrapper grid grid--1x2 container center" data-aos="zoom-in-up">
 			<div class="host__content flow-content--m">
 				<i class="icon fa-solid fa-share"></i>
 				<h3 class="host__content-title">Super Easy to Use</h3>
@@ -122,7 +123,7 @@
 		</div>
 
 		<div class="host__content-wrapper grid grid--1x2 container center">
-			<div class="host__content flow-content--m">
+			<div class="host__content flow-content--m" data-aos="fade-up">
 				<i class="icon fa-solid fa-desktop"></i>
 				<h3 class="host__content-title">Simply Fast Websites</h3>
 				<p class="host__content-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati vel ad unde est illo at. Labore excepturi officia dolores! </p>
@@ -134,7 +135,7 @@
 			</div>
 		</div>
 		<div class="host__content-wrapper grid grid--1x2 container center">
-			<div class="host__content flow-content--m">
+			<div class="host__content flow-content--m" data-aos="fade-up">
 				<i class="icon fa-brands fa-wordpress"></i>
 				<h3 class="host__content-title">Wordpress Made Easy</h3>
 				<p class="host__content-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati vel ad unde est illo at. Labore excepturi officia dolores! </p>
@@ -145,7 +146,7 @@
 				<img class="host__img host__img" src="img/wordpress@2x.dd9f8ba2.jpg" alt="">
 			</div>
 		</div>
-		<div class="host__content-wrapper grid grid--1x2 container center">
+		<div class="host__content-wrapper grid grid--1x2 container center" data-aos="fade-up">
 			<div class="host__content flow-content--m">
 
 				<i class="icon fa-solid fa-stopwatch"></i>
@@ -168,10 +169,10 @@
 		</header>
 
 		<div class="panel__grid grid grid--1x2 container">
-			<div class="panel__img-wrapper">
+			<div class="panel__img-wrapper" data-aos="fade-right">
 				<img class="panel__img" src="img/ipad.bbdd3a9b.png" alt="">
 			</div>
-			<div class="panel__content-wrapper py-2">
+			<div class="panel__content-wrapper py-2" data-aos="fade-up">
 				<div class="panel__content flow-content--xm">
 					<header class="panel__content-header">
 						<i class="icon fa-solid fa-image"></i>
@@ -202,12 +203,12 @@
 	</section>
 
 	<section class="testimonials" id="domain">
-		<header class="testimonials__header py-3 flow-content--xm">
+		<header class="testimonials__header py-3 flow-content--xm" data-aos="zoom-in">
 			<h2 class="testimonials__title">What our Customers are Saying</h2>
 			<div class="testimonials__desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ipsam. </div>
 		</header>
 
-		<div class="testimonials__content-wrapper grid grid--1x2 container">
+		<div class="testimonials__content-wrapper grid grid--1x2 container" data-aos="zoom-in">
 			<div class="testimonials__img-wrapper">
 				<img src="img/testimonial.ad9df737.jpg" alt="">
 				<i class="fa-solid fa-quote-left"></i>
@@ -274,5 +275,8 @@
 			</div>
 		</div>
 	</footer>
+		
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init();</script>
 </body>
 </html>
